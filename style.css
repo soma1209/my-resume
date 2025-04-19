@@ -37,6 +37,7 @@ header h1 {
     font-size: 16px;
     margin: 0;
     letter-spacing: 1px;
+    color: #1a3e72; /* Blue color */
 }
 
 header p {
@@ -61,7 +62,7 @@ section {
 
 /* ===== Heading Styles ===== */
 h1, h2, h3 {
-    color: var(--primary); /* Blue color */
+    color: #1a3e72; /* Blue color */
     font-size: 14px; /* 14px size */
     margin-top: 0;
 }
