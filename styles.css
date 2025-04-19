@@ -73,7 +73,7 @@ h2 {
     padding-bottom: 0.6rem;
 }
 h2 + p {
-    color: #333333; /* Dark gray color */
+    color: #000000; /* Dark gray color */
     
 }
 /* ===== Content Styles ===== */
@@ -85,13 +85,14 @@ p, li, .company, .institution, .date, footer p {
 
 /* ===== Experience & Education ===== */
 .job, .school {
+    color: #000000
     margin-bottom: 1.2rem;
     padding-bottom: 1.2rem;
     border-bottom: 1px dashed #e0e7ff;
 }
 
 .company, .institution {
-    color: var(--primary);
+    color: #000000;
     font-weight: 600;
     margin: 0.5rem 0;
 }
