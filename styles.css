@@ -1,38 +1,32 @@
 /* ===== Modern Font Import ===== */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
 /* ===== Base Styles ===== */
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
     line-height: 1.6;
-    color: #2a2a2a; /* Dark black */
+    color: #000000; /* Pure black for all text */
     background-color: #f8fafc;
     max-width: 900px;
     margin: 0 auto;
     padding: 0 20px;
-    background-image: radial-gradient(#e0e7ff 1px, transparent 1px);
-    background-size: 20px 20px;
 }
 
-/* ===== Sophisticated Color Palette ===== */
+/* ===== Color Palette ===== */
 :root {
     --primary: #1a3e72; /* Dark blue */
     --secondary: #0d2b5e;
-    --accent: #e74c3c;
     --light: #f0f4f8;
-    --text: #2a2a2a;
     --highlight: #e6f2ff;
 }
+
 /* ===== Navigation - Completely Hidden ===== */
 nav {
     display: none !important;
-    visibility: hidden;
-    height: 0;
-    margin: 0;
-    padding: 0;
 }
-/* ===== Elegant Header Styles ===== */
+
+/* ===== Header Styles ===== */
 header {
     background: linear-gradient(135deg, var(--primary), var(--secondary));
     color: white;
@@ -40,39 +34,22 @@ header {
     text-align: center;
     margin: 0 -20px 2.5rem;
     border-radius: 0 0 15px 15px;
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-    position: relative;
-    overflow: hidden;
-}
-
-header::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #e74c3c, #f39c12, #3498db);
 }
 
 header h1 {
-    font-family: 'Montserrat', sans-serif;
     font-size: 2.2rem;
     font-weight: 700;
     margin: 0;
-    letter-spacing: 0.5px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 header p {
-    color: white;
+    color: white; /* Header paragraph remains white */
     font-size: 1.1rem;
-    opacity: 0.9;
     margin-top: 0.75rem;
     font-weight: 300;
 }
 
-/* ===== Section Styles with Creative Touches ===== */
+/* ===== Section Styles ===== */
 section {
     background: white;
     padding: 1.8rem;
@@ -80,73 +57,39 @@ section {
     border-radius: 10px;
     box-shadow: 0 3px 6px rgba(0,0,0,0.05);
     border-left: 4px solid var(--primary);
-    transition: all 0.3s ease;
-    position: relative;
 }
 
-section:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
-}
-
-/* ===== Bold Dark Blue Headings ===== */
+/* ===== Headings ===== */
 h1, h2, h3 {
     color: var(--primary);
     font-weight: 700;
     font-size: 14px;
     margin: 0 0 1rem 0;
-    font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
     border-bottom: 2px solid #e0e7ff;
     padding-bottom: 0.6rem;
-    position: relative;
 }
 
-h2::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 50px;
-    height: 2px;
-    background: var(--accent);
-}
-
-/* ===== Enhanced Content Styles ===== */
+/* ===== Content Styles ===== */
 p, li, .company, .institution, .date, footer p {
-    color: var(--text);
+    color: #000000; /* Pure black */
     font-size: 12px;
     line-height: 1.7;
 }
 
-/* ===== Experience & Education Cards ===== */
+/* ===== Experience & Education ===== */
 .job, .school {
     margin-bottom: 1.2rem;
     padding-bottom: 1.2rem;
     border-bottom: 1px dashed #e0e7ff;
-    position: relative;
-    padding-left: 1.5rem;
-}
-
-.job::before, .school::before {
-    content: "•";
-    color: var(--accent);
-    font-size: 1.5rem;
-    position: absolute;
-    left: 0;
-    top: -0.3rem;
 }
 
 .company, .institution {
     color: var(--primary);
     font-weight: 600;
     margin: 0.5rem 0;
-    display: inline-block;
-    background: var(--highlight);
-    padding: 0.2rem 0.8rem;
-    border-radius: 4px;
 }
 
 .date {
@@ -156,7 +99,7 @@ p, li, .company, .institution, .date, footer p {
     margin-top: 0.3rem;
 }
 
-/* ===== Modern Skills Tags ===== */
+/* ===== Skills ===== */
 .skills-list {
     display: flex;
     flex-wrap: wrap;
@@ -171,52 +114,21 @@ p, li, .company, .institution, .date, footer p {
     padding: 0.4rem 1rem;
     border-radius: 20px;
     font-size: 12px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    transition: all 0.3s ease;
 }
 
-.skills-list li:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
-}
-
-/* ===== Elegant Contact Section ===== */
+/* ===== Contact Section ===== */
 #contact p {
     margin: 0.6rem 0;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+    /* Removed the red dot by deleting the ::before pseudo-element */
 }
 
-#contact p::before {
-    content: "";
-    display: inline-block;
-    width: 12px;
-    height: 12px;
-    background-color: var(--primary);
-    border-radius: 50%;
-    opacity: 0.6;
-}
-
-/* ===== Creative Footer ===== */
+/* ===== Footer ===== */
 footer {
     text-align: center;
     padding: 1.5rem;
     color: #6b7280;
     margin-top: 3rem;
     border-top: 1px solid #e0e7ff;
-    position: relative;
-}
-
-footer::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, var(--primary), transparent);
 }
 
 /* ===== Responsive Design ===== */
@@ -233,18 +145,3 @@ footer::before {
         font-size: 1.8rem;
     }
 }
-
-/* ===== Animation Effects ===== */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(10px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-section {
-    animation: fadeIn 0.6s ease forwards;
-}
-
-section:nth-child(2) { animation-delay: 0.1s; }
-section:nth-child(3) { animation-delay: 0.2s; }
-section:nth-child(4) { animation-delay: 0.3s; }
-section:nth-child(5) { animation-delay: 0.4s; }
